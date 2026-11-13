@@ -1,0 +1,13 @@
+﻿[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vjepa-activity"
+version = "0.1.0"
+description = "Video and camera action recognition using V-JEPA2 and a pooled MLP"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "transformers>=4.50", "opencv-python>=4.9", "numpy>=1.26"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
